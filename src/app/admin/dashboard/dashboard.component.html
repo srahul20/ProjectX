@@ -1,0 +1,19 @@
+<header class="bg-white shadow">
+  <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+    <h1 class="text-3xl font-bold text-gray-900">Dashboard</h1>
+  </div>
+</header>
+<button (click)="openDialog(openedTemplate)" >Open</button>
+<div class="p-5">
+  <div class="w-full" style="height: 35rem;">
+    <pdf-viewer
+      [pdfUrl]="pdfUrl"
+      [readOnly]="true"
+    ></pdf-viewer>
+  </div>
+  <p>dashboard works!</p>
+</div>
+
+<ng-template #openedTemplate >
+  <h1>This is testing</h1>
+</ng-template>
